@@ -1,6 +1,5 @@
 # strip
 
-![Alt text](../../../../../resources/emptyStrip.gif?raw=true "Optional Title")
 
 
-![Alt text](/../resources/emptyStrip.gif?raw=true "Optional Title")
+![ScreenShot](https://raw.github.com/beckg/resources/master/emptyStrip.gif)
