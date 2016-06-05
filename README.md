@@ -1,3 +1,3 @@
 # strip
 
-ff
+![Alt text](/resources/emptyStrip.gif?raw=true "Optional Title")
