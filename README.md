@@ -29,7 +29,7 @@ BoardProperties allows you to change the number of rows and the number of holes.
 can surround the strip where you can drop unplaced components - it was an idea that did not really gel.
 <br><br>
 A layout is saved in a modified version of the 
-<a href="https://raw.github.com/beckg/common/master/json.html">JSON</a>
+<a href="https://raw.github.com/beckg/common/master/json.md">JSON</a>
 format.
 <br><br>
 The important action is "right-click" over the strip.
