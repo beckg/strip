@@ -2,7 +2,7 @@
 
 I use veroboard for many of my projects, which in the past has led to either very unsightly boards
 or lots of pencil drawings as I work out how to route the signals.
-<br>
+<br><br>
 I periodically look for software to alleviate these problems but have failed to find anything that made 
 the task any easier or that I was prepared to pay for. I did find 
 <a href="https://sites.google.com/site/libby8dev/stripes">Stripes</a>
@@ -10,35 +10,26 @@ and liked much of what I saw, but found some problems with the implementation.
 Therefore I took some of the ideas and developed an alternative solution. I know that one should resist 
 not-invented-here, but sometimes it is fun to play!  The philosophy of using Java so 
 that you have a cross platform solution is important. 
-<br>
-You will need an installed version of Java 6 or 7. 
+<br><br>
+You will need an installed version of Java 6, 7 or 8. 
 <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java</a>
-<br>
-You will need the zip file <a href="downloads/aventinus-1.0.0.zip">aventinus-1.0.0</a>. Unzip the file to a directory
-of your choice.
-<br>
-The code needs JavaNativeAccess (jna) to compile - the reasons for which become clear in other scribblings. 
-The zip contains versions of the jars. Refer to the web-site <a href="https://github.com/twall/jna">jna</a> 
-for more details. The authors have done a wonderful job. 
-<br>
-I am not a great fan of Eclipse and other IDEs - I find a simple editor and make (nmake) adequate. 
-There are makefiles in the zip. If you want to use a makefile, then you will 
-need to tweak the JAVA_HOME setting; if you prefer IDEs, then you know how to import the code into a project.
-<br>
-The makefile contains a run target 'runstrip', otherwise the following command should work on linux.
-<pre><b>$(JAVA_HOME)/bin/java -classpath jar/aventinus.jar org.aventinus.strip.Strip</b></pre>
+<br><br>
+You will need clone this repository and the common repository. The make(nmake) files how the trivial build.
+<br><br>
+The makefile contains a run target 'run', otherwise the following command should work on linux.
+<pre><b>$(JAVA_HOME)/bin/java -classpath jar/strip.jar org.aventinus.strip.Strip</b></pre>
 and the following on windows.
-<pre><b>java -classpath .\jar\aventinus.jar org.aventinus.strip.Strip</b></pre>
+<pre><b>java -classpath .\jar\strip.jar org.aventinus.strip.Strip</b></pre>
 You should see a default board:
-<br>
+<br><br>
 <img src=https://raw.github.com/beckg/resources/master/emptyStrip.gif height="298"/>
-<br>
+<br><br>
 A quick look around the menus will give you a feel for the kinds of things that you can do - nothing suprising.
 BoardProperties allows you to change the number of rows and the number of holes. There is a "bench" that
 can surround the strip where you can drop unplaced components - it was an idea that did not really gel.
-<br>
+<br><br>
 A layout is saved in a modified version of the <a href="json.html">JSON</a> format.
-<br>
+<br><br>
 The important action is "right-click" over the strip.
 <br>
 <img src=https://raw.github.com/beckg/resources/master/stripMenu.gif alt="layout"/>
