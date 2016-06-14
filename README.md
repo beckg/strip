@@ -14,7 +14,7 @@ that you have a cross platform solution is important.
 You will need an installed version of Java 6, 7 or 8. 
 <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java</a>
 <br><br>
-You will need clone this repository and the common repository. The make(nmake) files how the trivial build.
+You will need to clone this repository and the common repository. The make(nmake) files show the trivial build.
 <br><br>
 The makefile contains a run target 'run', otherwise the following command should work on linux.
 <pre><b>$(JAVA_HOME)/bin/java -classpath jar/strip.jar org.aventinus.strip.Strip</b></pre>
@@ -22,7 +22,7 @@ and the following on windows.
 <pre><b>java -classpath .\jar\strip.jar org.aventinus.strip.Strip</b></pre>
 You should see a default board:
 <br><br>
-<img src=https://raw.github.com/beckg/resources/master/emptyStrip.gif height="298"/>
+<img src=https://raw.github.com/beckg/resources/master/strip/emptyStrip.gif height="298"/>
 <br><br>
 A quick look around the menus will give you a feel for the kinds of things that you can do - nothing suprising.
 BoardProperties allows you to change the number of rows and the number of holes. There is a "bench" that
@@ -32,7 +32,7 @@ A layout is saved in a modified version of the <a href="json.html">JSON</a> form
 <br><br>
 The important action is "right-click" over the strip.
 <br>
-<img src=https://raw.github.com/beckg/resources/master/stripMenu.gif alt="layout"/>
+<img src=https://raw.github.com/beckg/resources/master/strip/stripMenu.gif alt="layout"/>
 <br>
 Place a component. If you "left-click" over the body of the component, then you can drag the whole component; if you
 "left-click" over a connector (wire-through-hole), then (usually) you can drag just the connector. Some components, 
@@ -40,7 +40,7 @@ such as IC pads, only move as a whole.
 <br>
 If you "right-click" over a component, then the menu contains aditional options. 
 <br>
-<img src=https://raw.github.com/beckg/resources/master/stripEdit.gif alt="layout"/>
+<img src=https://raw.github.com/beckg/resources/master/strip/stripEdit.gif alt="layout"/>
 <br>
 The edit option allows you to change any options - for example the size of that electrolytic. It is worth checking 
 the edit dialogue for each kind of component. It also allows you to record a name, value, and some 
@@ -48,13 +48,13 @@ details about the purpose of the component - a bit of documentation. The name is
 <br>
 Add a wire and a couple of spot-cuts, set the "Tools->Test" option in the menu and "left-click" one end of the wire.
 <br>
-<img src=https://raw.github.com/beckg/resources/master/testStrip.gif alt="layout"/>
+<img src=https://raw.github.com/beckg/resources/master/strip/testStrip.gif alt="layout"/>
 <br>
 Clear the board - "left-click" above and left of all the components and drag below and right and press delete.
 Add an electrolytic E1, add a resistor R1.
 <br>
-<img src=https://raw.github.com/beckg/resources/master/e1Tooltip.gif alt="layout"/>
-<img src=https://raw.github.com/beckg/resources/master/r1Tooltip.gif alt="layout"/>
+<img src=https://raw.github.com/beckg/resources/master/strip/e1Tooltip.gif alt="layout"/>
+<img src=https://raw.github.com/beckg/resources/master/strip/r1Tooltip.gif alt="layout"/>
 <br>
 Create a file containing...
 <pre>R1 0 1
