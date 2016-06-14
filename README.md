@@ -28,31 +28,33 @@ A quick look around the menus will give you a feel for the kinds of things that 
 BoardProperties allows you to change the number of rows and the number of holes. There is a "bench" that
 can surround the strip where you can drop unplaced components - it was an idea that did not really gel.
 <br><br>
-A layout is saved in a modified version of the <a href="json.html">JSON</a> format.
+A layout is saved in a modified version of the 
+<a href="https://raw.github.com/beckg/common/master/json.html">JSON</a>
+format.
 <br><br>
 The important action is "right-click" over the strip.
-<br>
+<br><br>
 <img src=https://raw.github.com/beckg/resources/master/strip/stripMenu.gif alt="layout"/>
-<br>
+<br><br>
 Place a component. If you "left-click" over the body of the component, then you can drag the whole component; if you
 "left-click" over a connector (wire-through-hole), then (usually) you can drag just the connector. Some components, 
 such as IC pads, only move as a whole.
-<br>
+<br><br>
 If you "right-click" over a component, then the menu contains aditional options. 
-<br>
+<br><br>
 <img src=https://raw.github.com/beckg/resources/master/strip/stripEdit.gif alt="layout"/>
-<br>
+<br><br>
 The edit option allows you to change any options - for example the size of that electrolytic. It is worth checking 
 the edit dialogue for each kind of component. It also allows you to record a name, value, and some 
 details about the purpose of the component - a bit of documentation. The name is important. 
-<br>
+<br><br>
 Add a wire and a couple of spot-cuts, set the "Tools->Test" option in the menu and "left-click" one end of the wire.
-<br>
+<br><br>
 <img src=https://raw.github.com/beckg/resources/master/strip/testStrip.gif alt="layout"/>
-<br>
+<br><br>
 Clear the board - "left-click" above and left of all the components and drag below and right and press delete.
 Add an electrolytic E1, add a resistor R1.
-<br>
+<br><br>
 <img src=https://raw.github.com/beckg/resources/master/strip/e1Tooltip.gif alt="layout"/>
 <img src=https://raw.github.com/beckg/resources/master/strip/r1Tooltip.gif alt="layout"/>
 <br>
@@ -65,12 +67,12 @@ window that says...
 ... end compare</pre>
 The netlist in the file has been checked against the netlist implied by the layout and found to represent the 
 same circuit.
-<br>
+<br><br>
 If there are differences then these will be listed. The output can be hard to understand - more work is needed
 here. A single mis-wiring can lead to a cascade of errors. Build up the circuit slowly, missing components 
 seem to be easier to work with that incorrectly wired ones. The actual checking seems to be correct; the errors
 are real! The program will try and correct pin ordering for "reversible" components - resistors and non-electrolytics.
-<br>
+<br><br>
 As a last resort you can use File->Export NetList. However, you have to be very careful. When you check the 
 netlist against your designs it is easy to confuse the orientation of components such as 3-terminal ICs and
 convince yourself that the netlist represents your drawing.
